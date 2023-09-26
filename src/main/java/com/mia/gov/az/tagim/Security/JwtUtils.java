@@ -3,7 +3,6 @@ package com.mia.gov.az.tagim.Security;
 import com.mia.gov.az.tagim.Entity.User;
 import com.mia.gov.az.tagim.Service.UserDetailsServiceImpl;
 import io.jsonwebtoken.*;
-import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.Authentication;
@@ -54,7 +53,6 @@ public class JwtUtils {
         } catch (IllegalArgumentException e) {
             log.error("JWT claims string is empty: {}", e.getMessage());
         }
-
         return false;
     }
 

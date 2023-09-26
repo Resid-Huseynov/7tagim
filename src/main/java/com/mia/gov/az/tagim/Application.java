@@ -14,7 +14,7 @@ public class Application implements CommandLineRunner {
 
 	@Override
 	public void run(String... args) throws Exception {
-		System.out.println(new BCryptPasswordEncoder().encode("resid got"));
-		System.out.println(new BCryptPasswordEncoder().encode("elik velik"));
+		System.out.println(new BCryptPasswordEncoder().encode("resid"));
+		System.out.println(new BCryptPasswordEncoder().encode("elsad"));
 	}
 }
