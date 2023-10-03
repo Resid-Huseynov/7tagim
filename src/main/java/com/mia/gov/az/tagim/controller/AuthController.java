@@ -1,10 +1,10 @@
-package com.mia.gov.az.tagim.Controller;
+package com.mia.gov.az.tagim.controller;
 
-import com.mia.gov.az.tagim.Dto.AuthenticationDto;
-import com.mia.gov.az.tagim.Dto.JwtResponseDto;
-import com.mia.gov.az.tagim.Repository.RoleRepository;
-import com.mia.gov.az.tagim.Repository.UserRepository;
-import com.mia.gov.az.tagim.Security.JwtUtils;
+import com.mia.gov.az.tagim.dto.AuthenticationDto;
+import com.mia.gov.az.tagim.dto.JwtResponseDto;
+import com.mia.gov.az.tagim.repository.RoleRepository;
+import com.mia.gov.az.tagim.repository.UserRepository;
+import com.mia.gov.az.tagim.security.JwtUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.security.authentication.AuthenticationManager;

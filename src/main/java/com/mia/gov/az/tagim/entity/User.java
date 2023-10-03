@@ -1,4 +1,4 @@
-package com.mia.gov.az.tagim.Entity;
+package com.mia.gov.az.tagim.entity;
 
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;

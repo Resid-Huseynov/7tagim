@@ -1,4 +1,4 @@
-package com.mia.gov.az.tagim.Dto;
+package com.mia.gov.az.tagim.dto;
 
 import lombok.Getter;
 import lombok.Setter;

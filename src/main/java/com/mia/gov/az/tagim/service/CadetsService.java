@@ -1,6 +1,6 @@
-package com.mia.gov.az.tagim.Service;
+package com.mia.gov.az.tagim.service;
 
-import com.mia.gov.az.tagim.Dto.CadetsDto;
+import com.mia.gov.az.tagim.dto.CadetsDto;
 
 import java.util.List;
 

@@ -1,7 +1,7 @@
-package com.mia.gov.az.tagim.Mapper;
+package com.mia.gov.az.tagim.mapper;
 
-import com.mia.gov.az.tagim.Dto.CadetsDto;
-import com.mia.gov.az.tagim.Entity.Cadets;
+import com.mia.gov.az.tagim.dto.CadetsDto;
+import com.mia.gov.az.tagim.entity.Cadets;
 import org.springframework.stereotype.Component;
 
 @Component

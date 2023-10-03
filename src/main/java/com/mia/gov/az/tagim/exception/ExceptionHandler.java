@@ -1,4 +1,4 @@
-package com.mia.gov.az.tagim.Exception;
+package com.mia.gov.az.tagim.exception;
 
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.ControllerAdvice;

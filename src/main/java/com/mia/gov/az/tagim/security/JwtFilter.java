@@ -1,6 +1,6 @@
-package com.mia.gov.az.tagim.Security;
+package com.mia.gov.az.tagim.security;
 
-import com.mia.gov.az.tagim.Service.UserDetailsServiceImpl;
+import com.mia.gov.az.tagim.service.UserDetailsServiceImpl;
 import jakarta.servlet.FilterChain;
 import jakarta.servlet.ServletException;
 import jakarta.servlet.http.HttpServletRequest;

@@ -1,4 +1,4 @@
-package com.mia.gov.az.tagim.Exception;
+package com.mia.gov.az.tagim.exception;
 
 public class CadetNotFoundError extends RuntimeException{
 

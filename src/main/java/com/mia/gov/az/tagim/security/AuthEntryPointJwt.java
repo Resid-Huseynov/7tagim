@@ -1,4 +1,4 @@
-package com.mia.gov.az.tagim.Security;
+package com.mia.gov.az.tagim.security;
 
 import jakarta.servlet.ServletException;
 import jakarta.servlet.http.HttpServletRequest;

@@ -1,7 +1,7 @@
-package com.mia.gov.az.tagim.Security;
+package com.mia.gov.az.tagim.security;
 
-import com.mia.gov.az.tagim.Entity.User;
-import com.mia.gov.az.tagim.Service.UserDetailsServiceImpl;
+import com.mia.gov.az.tagim.entity.User;
+import com.mia.gov.az.tagim.service.UserDetailsServiceImpl;
 import io.jsonwebtoken.*;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;

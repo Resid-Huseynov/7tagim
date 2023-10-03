@@ -1,6 +1,6 @@
-package com.mia.gov.az.tagim.Repository;
+package com.mia.gov.az.tagim.repository;
 
-import com.mia.gov.az.tagim.Entity.Cadets;
+import com.mia.gov.az.tagim.entity.Cadets;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

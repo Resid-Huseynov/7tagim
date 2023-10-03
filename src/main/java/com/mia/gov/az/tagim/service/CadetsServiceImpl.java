@@ -1,10 +1,10 @@
-package com.mia.gov.az.tagim.Service;
+package com.mia.gov.az.tagim.service;
 
-import com.mia.gov.az.tagim.Dto.CadetsDto;
-import com.mia.gov.az.tagim.Entity.Cadets;
-import com.mia.gov.az.tagim.Exception.CadetNotFoundError;
-import com.mia.gov.az.tagim.Mapper.CadetsMapper;
-import com.mia.gov.az.tagim.Repository.CadetsRepository;
+import com.mia.gov.az.tagim.dto.CadetsDto;
+import com.mia.gov.az.tagim.entity.Cadets;
+import com.mia.gov.az.tagim.exception.CadetNotFoundError;
+import com.mia.gov.az.tagim.mapper.CadetsMapper;
+import com.mia.gov.az.tagim.repository.CadetsRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 

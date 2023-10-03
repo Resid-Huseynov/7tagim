@@ -1,6 +1,6 @@
-package com.mia.gov.az.tagim.Security;
+package com.mia.gov.az.tagim.security;
 
-import com.mia.gov.az.tagim.Service.UserDetailsServiceImpl;
+import com.mia.gov.az.tagim.service.UserDetailsServiceImpl;
 import lombok.RequiredArgsConstructor;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -26,6 +26,7 @@ public class SecurityConfig {
     private final JwtFilter jwtFilter;
     private final AuthEntryPointJwt authEntryPointJwt;
 
+
     @Bean
     public JwtFilter authenticationJwtTokenFilter() {
         return new JwtFilter();
@@ -39,21 +40,22 @@ public class SecurityConfig {
                 )
                 .csrf(AbstractHttpConfigurer::disable)
                 .cors(Customizer.withDefaults())
-                .exceptionHandling(exceptionHandler->exceptionHandler.authenticationEntryPoint(authEntryPointJwt))
-                .sessionManagement(sessionManagement->sessionManagement.sessionCreationPolicy(SessionCreationPolicy.STATELESS));
+                .exceptionHandling(exceptionHandler -> exceptionHandler.authenticationEntryPoint(authEntryPointJwt))
+                .sessionManagement(sessionManagement -> sessionManagement.sessionCreationPolicy(SessionCreationPolicy.STATELESS));
         http.authenticationProvider(authenticationProvider());
-        http.addFilterBefore( authenticationJwtTokenFilter(), UsernamePasswordAuthenticationFilter.class);
+        http.addFilterBefore(authenticationJwtTokenFilter(), UsernamePasswordAuthenticationFilter.class);
 
         return http.build();
     }
 
     @Bean
-    public PasswordEncoder passwordEncoder(){
+    public PasswordEncoder passwordEncoder() {
+
         return new BCryptPasswordEncoder();
     }
 
     @Bean
-    public DaoAuthenticationProvider authenticationProvider(){
+    public DaoAuthenticationProvider authenticationProvider() {
         DaoAuthenticationProvider authenticationProvider = new DaoAuthenticationProvider();
         authenticationProvider.setPasswordEncoder(passwordEncoder());
         authenticationProvider.setUserDetailsService(userDetailsService);
@@ -65,7 +67,4 @@ public class SecurityConfig {
     public AuthenticationManager authenticationManager(AuthenticationConfiguration authConfig) throws Exception {
         return authConfig.getAuthenticationManager();
     }
-
-//    @Bean
-//    public InMemoryUserDetailsManager userDetailsManager
 }

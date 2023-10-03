@@ -1,6 +1,6 @@
-package com.mia.gov.az.tagim.Service;
+package com.mia.gov.az.tagim.service;
 
-import com.mia.gov.az.tagim.Entity.User;
+import com.mia.gov.az.tagim.entity.User;
 
 import java.util.List;
 

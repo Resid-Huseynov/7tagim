@@ -1,8 +1,8 @@
-package com.mia.gov.az.tagim.Service;
+package com.mia.gov.az.tagim.service;
 
 import com.google.gson.Gson;
-import com.mia.gov.az.tagim.Entity.User;
-import com.mia.gov.az.tagim.Repository.UserRepository;
+import com.mia.gov.az.tagim.entity.User;
+import com.mia.gov.az.tagim.repository.UserRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;

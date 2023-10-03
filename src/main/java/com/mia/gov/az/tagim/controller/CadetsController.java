@@ -1,8 +1,8 @@
-package com.mia.gov.az.tagim.Controller;
+package com.mia.gov.az.tagim.controller;
 
-import com.mia.gov.az.tagim.Dto.CadetsDto;
-import com.mia.gov.az.tagim.Exception.CadetNotFoundError;
-import com.mia.gov.az.tagim.Service.CadetsService;
+import com.mia.gov.az.tagim.dto.CadetsDto;
+import com.mia.gov.az.tagim.exception.CadetNotFoundError;
+import com.mia.gov.az.tagim.service.CadetsService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.web.bind.annotation.*;
